@@ -22,6 +22,7 @@ var carDetails = {
 */
 
 //Code Here
+let {color} = carDetails
 
 
 
@@ -35,7 +36,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {firstName, lastName, title} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,6 +55,15 @@ function greeting( obj ) {
 */
 
 //Code Here
+let obj = {
+  utah: 2,
+  california: 3,
+  texas: 4, 
+  arizona: 5
+}
+let newObj = obj.reduce(function totalPopulation(obj){
+
+}
 
 
 
