@@ -22,7 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-let {color} = carDetails
+let {color, make, model, year} = carDetails
 
 
 
@@ -61,9 +61,16 @@ let obj = {
   texas: 4, 
   arizona: 5
 }
-let newObj = obj.reduce(function totalPopulation(obj){
-
+let {utah, california, texas, arizona} = obj
+let totalPopulation = (obj) => {
+  let total = utah + california + texas + arizona;
+  return total
 }
+
+
+totalPopulation()
+
+
 
 
 
@@ -78,7 +85,6 @@ let newObj = obj.reduce(function totalPopulation(obj){
 */
 
 //Code Here
-
 
 
 ////////// PROBLEM 5 //////////
