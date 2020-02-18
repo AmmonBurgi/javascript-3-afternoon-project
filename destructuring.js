@@ -55,20 +55,14 @@ function greeting( obj ) {
 */
 
 //Code Here
-let obj = {
-  utah: 2,
-  california: 3,
-  texas: 4, 
-  arizona: 5
-}
-let {utah, california, texas, arizona} = obj
+
 let totalPopulation = (obj) => {
-  let total = utah + california + texas + arizona;
-  return total
+  let = {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona
 }
 
 
-totalPopulation()
+totalPopulation({utah: 5, california: 5, texas: 5, arizona: 5})
 
 
 
@@ -85,6 +79,13 @@ totalPopulation()
 */
 
 //Code Here
+function ingredients(obj){
+  let {carb, fat, protein} = obj
+  let array = []
+  array.push(carb, fat, protein)
+  return array
+}
+console.log(ingredients({carb: 'bread', fat: 'butter', protein: 'meat'}));
 
 
 ////////// PROBLEM 5 //////////
@@ -101,7 +102,18 @@ totalPopulation()
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+//Code Here 
+let largeNumbers = ({first, second, third}) => {
+  if (first < second && first < third){
+    return first
+  }
+  else if(second < first && second < third){
+    return second
+  }
+  else if(third < first && third < second){
+    return third
+  }
+}
 
 
 
@@ -114,5 +126,15 @@ totalPopulation()
 */
 
 //Code Here
-
+let numberGroups = (a, b, c) => {
+  if (a.length > b.length && a.length > c.length){
+    return a
+  }
+  else if (b.length > a.length && b.length > c.length){
+    return b
+  }
+  else if (c.length > a.length && c.length > b.length){
+    return c
+  }
+}
 
