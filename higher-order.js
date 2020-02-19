@@ -68,7 +68,8 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 //Code Here
-let reducing = 
+let totalPopulation = populations.reduce((total,people) => total+people);
+
 
 //  = populations.reduce(/* Provide Your Callback Here */)
 
@@ -96,7 +97,12 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 //Code Here
-let myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+let myStrongest = monstersInYourPocket.filter(function(element, index, array){
+  if (element.CP > 200){
+    return element
+  }
+});
+// = monstersInYourPocket.filter(/* Provide Your Callback Here */)
 
 
 
@@ -133,6 +139,6 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal //Code Here
+//Code Here
 
 
